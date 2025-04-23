@@ -1,0 +1,307 @@
+/* General Styling */
+.ngo-collaboration-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+}
+
+.contact-info span {
+  margin-right: 20px;
+  color: #333;
+}
+
+.btn-contribute {
+  background-color: #FFC107;
+  color: #333;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Header Section */
+.header-section {
+    /* background-image: url('./banner2.jpg');   */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-section .overlay {
+  background-color: rgba(251, 247, 247, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-section .logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.header-section h1 {
+  font-size: 2em;
+  margin: 0;
+  z-index: 1;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .nav-link {
+  margin: 0 15px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: #FFC107;
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 200px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #555;
+}
+
+/* Scrollable Section */
+.scrollable {
+  overflow-y: auto;
+  max-height: calc(100vh - 60px); /* Adjust based on header height */
+  padding: 20px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Social Media Icons - Vertical on Right */
+.social-icons-vertical {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-icons-vertical a {
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.social-icons-vertical a:hover {
+  background-color: #FFC107;
+}
+
+/* Breadcrumb Section */
+.custom-breadcrumb {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+.breadcrumb-container-inner h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.breadcrumb ol {
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  color: #666;
+}
+.breadcrumb ol li {
+  margin-right: 10px;
+}
+.breadcrumb ol li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* NGO Story Section */
+.ngo-story-section {
+  padding: 40px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.ngo-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+.ngo-story-section p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer-container {
+  background: rgba(0, 0, 0, 0.7); /* Dark background with some opacity */
+  color: white;
+  padding: 40px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column p {
+  margin: 0 0 8px 0;
+  line-height: 1.5;
+}
+.highlight-section {
+  background: #faf9f9; /* Similar color as seen in your image */
+  padding: 20px;
+  color: rgb(12, 12, 12);
+  margin-top: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.highlight-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.highlight-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.highlight-quote {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.highlight-stats {
+  display: flex;
+  justify-content: center;
+}
+
+.stat-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.stat-item .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
