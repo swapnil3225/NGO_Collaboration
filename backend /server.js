@@ -19,7 +19,7 @@ app.use("/api/ngos", ngoRoutes);
 app.use("/api/events", eventRoutes);
 
 // Start the server
-mongoose.connect("mongodb://localhost:27017", { dbName: "ngo_db" })
+mongoose.connect("mongodb+srv://swap3225:Swapnil3225@cluster0.1dxnx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { dbName: "ngo_db" })
   .then(() => {
     console.log("connected to DB successfully");
     app.listen(4000, "localhost", () => console.log("Listening to port 4000"));
